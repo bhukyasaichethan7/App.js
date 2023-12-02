@@ -11,23 +11,23 @@ const CourseListingPage = () => {
   }, []);
 
   const filteredCourses = courses.filter(course =>
-    course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    course.instructor.toLowerCase().includes(searchTerm.toLowerCase())
+    course.web development.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    course.web development.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <div>
       <input
         type="text"
-        placeholder="Course name"
-        placeholder="instructor name"
+        placeholder="Course name(Web development)"
+        placeholder="instructor name(saichethan)"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <ul>
         {filteredCourses.map(course => (
           <li key={course.id}>
-            <Link to={`/course/${course.id}`}>{course.name} - {course.instructor}</Link>
+            <Link to={`/course/${course.id}`}>{course.web development} - {course.saichethan}</Link>
           </li>
         ))}
       </ul>
