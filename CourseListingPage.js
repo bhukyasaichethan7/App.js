@@ -12,7 +12,7 @@ const CourseListingPage = () => {
 
   const filteredCourses = courses.filter(course =>
     course.web development.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    course.web development.toLowerCase().includes(searchTerm.toLowerCase())
+    course.saichethan.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
